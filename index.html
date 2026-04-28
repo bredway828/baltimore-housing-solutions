@@ -9,11 +9,11 @@
 
   <!-- Open Graph -->
   <meta property="og:title" content="Own a Baltimore Home for $1 | Baltimore Housing Solutions Team" />
-  <meta property="og:description" content="We help Baltimore City residents buy homes for $1 through the city's Fixed Pricing Program â and handle all the renovations as your licensed General Contractor." />
+  <meta property="og:description" content="We help Baltimore City residents buy homes for $1 through the city's Fixed Pricing Program &mdash; and handle all the renovations as your licensed General Contractor." />
   <meta property="og:type" content="website" />
 
   <style>
-    /* ââ Reset & Base âââââââââââââââââââââââââââââââââââââââ */
+    /* Reset & Base */
     *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
     html { scroll-behavior: smooth; }
     body {
@@ -25,7 +25,7 @@
     img { max-width: 100%; display: block; }
     a { color: inherit; text-decoration: none; }
 
-    /* ââ Color Tokens âââââââââââââââââââââââââââââââââââââââ */
+    /* Color Tokens */
     :root {
       --navy:   #0d2b4e;
       --navy2:  #163d6b;
@@ -39,7 +39,7 @@
       --green:  #2ecc71;
     }
 
-    /* ââ Utility ââââââââââââââââââââââââââââââââââââââââââââ */
+    /* Utility */
     .container { max-width: 1100px; margin: 0 auto; padding: 0 24px; }
     .btn {
       display: inline-block;
@@ -51,21 +51,11 @@
       transition: all 0.2s;
       border: none;
     }
-    .btn-gold {
-      background: var(--gold);
-      color: var(--navy);
-    }
+    .btn-gold { background: var(--gold); color: var(--navy); }
     .btn-gold:hover { background: var(--gold2); transform: translateY(-1px); box-shadow: 0 4px 18px rgba(232,160,32,0.45); }
-    .btn-navy {
-      background: var(--navy);
-      color: var(--white);
-    }
+    .btn-navy { background: var(--navy); color: var(--white); }
     .btn-navy:hover { background: var(--navy2); transform: translateY(-1px); }
-    .btn-outline {
-      background: transparent;
-      color: var(--white);
-      border: 2px solid var(--white);
-    }
+    .btn-outline { background: transparent; color: var(--white); border: 2px solid var(--white); }
     .btn-outline:hover { background: rgba(255,255,255,0.12); }
     .section-label {
       display: inline-block;
@@ -86,13 +76,9 @@
       line-height: 1.2;
       margin-bottom: 16px;
     }
-    .section-sub {
-      font-size: 1.05rem;
-      color: var(--muted);
-      max-width: 640px;
-    }
+    .section-sub { font-size: 1.05rem; color: var(--muted); max-width: 640px; }
 
-    /* ââ Nav âââââââââââââââââââââââââââââââââââââââââââââââ */
+    /* Nav */
     nav {
       background: var(--navy);
       padding: 16px 0;
@@ -101,27 +87,10 @@
       z-index: 100;
       box-shadow: 0 2px 12px rgba(0,0,0,0.25);
     }
-    .nav-inner {
-      display: flex;
-      align-items: center;
-      justify-content: space-between;
-      gap: 16px;
-    }
-    .nav-logo {
-      font-size: 1.15rem;
-      font-weight: 800;
-      color: var(--white);
-      line-height: 1.2;
-    }
+    .nav-inner { display: flex; align-items: center; justify-content: space-between; gap: 16px; }
+    .nav-logo { font-size: 1.15rem; font-weight: 800; color: var(--white); line-height: 1.2; }
     .nav-logo span { color: var(--gold); }
-    .nav-phone {
-      display: flex;
-      align-items: center;
-      gap: 8px;
-      color: var(--white);
-      font-weight: 700;
-      font-size: 1rem;
-    }
+    .nav-phone { display: flex; align-items: center; gap: 8px; color: var(--white); font-weight: 700; font-size: 1rem; }
     .nav-phone svg { flex-shrink: 0; }
     .nav-cta { display: flex; gap: 10px; align-items: center; }
     @media (max-width: 640px) {
@@ -130,7 +99,7 @@
       .nav-logo { font-size: 1rem; }
     }
 
-    /* ââ Hero ââââââââââââââââââââââââââââââââââââââââââââââ */
+    /* Hero */
     #hero {
       background: linear-gradient(135deg, var(--navy) 0%, #1a3f6e 60%, #0f2440 100%);
       color: var(--white);
@@ -146,12 +115,7 @@
       background: radial-gradient(circle, rgba(232,160,32,0.18) 0%, transparent 70%);
       border-radius: 50%;
     }
-    .hero-grid {
-      display: grid;
-      grid-template-columns: 1fr 1fr;
-      gap: 48px;
-      align-items: center;
-    }
+    .hero-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 48px; align-items: center; }
     @media (max-width: 768px) { .hero-grid { grid-template-columns: 1fr; } }
     .hero-eyebrow {
       display: inline-block;
@@ -165,420 +129,136 @@
       border-radius: 4px;
       margin-bottom: 18px;
     }
-    .hero-title {
-      font-size: clamp(2rem, 4vw, 3rem);
-      font-weight: 900;
-      line-height: 1.1;
-      margin-bottom: 20px;
-    }
+    .hero-title { font-size: clamp(2rem, 4vw, 3rem); font-weight: 900; line-height: 1.1; margin-bottom: 20px; }
     .hero-title .accent { color: var(--gold); }
-    .hero-desc {
-      font-size: 1.1rem;
-      color: rgba(255,255,255,0.85);
-      margin-bottom: 32px;
-      max-width: 480px;
-    }
+    .hero-desc { font-size: 1.1rem; color: rgba(255,255,255,0.85); margin-bottom: 32px; max-width: 480px; }
     .hero-actions { display: flex; gap: 14px; flex-wrap: wrap; }
-    .hero-trust {
-      display: flex;
-      flex-wrap: wrap;
-      gap: 18px;
-      margin-top: 36px;
-    }
-    .trust-item {
-      display: flex;
-      align-items: center;
-      gap: 8px;
-      font-size: 0.9rem;
-      color: rgba(255,255,255,0.8);
-    }
-    .trust-icon {
-      width: 22px; height: 22px;
-      background: var(--gold);
-      border-radius: 50%;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      flex-shrink: 0;
-    }
+    .hero-trust { display: flex; flex-wrap: wrap; gap: 18px; margin-top: 36px; }
+    .trust-item { display: flex; align-items: center; gap: 8px; font-size: 0.9rem; color: rgba(255,255,255,0.8); }
+    .trust-icon { width: 22px; height: 22px; background: var(--gold); border-radius: 50%; display: flex; align-items: center; justify-content: center; flex-shrink: 0; }
     .trust-icon svg { width: 12px; height: 12px; }
 
     /* Hero Card */
-    .hero-card {
-      background: var(--white);
-      border-radius: 14px;
-      padding: 36px 32px;
-      box-shadow: 0 20px 60px rgba(0,0,0,0.35);
-    }
-    .hero-card h3 {
-      color: var(--navy);
-      font-size: 1.3rem;
-      font-weight: 800;
-      margin-bottom: 4px;
-    }
-    .hero-card .subhead {
-      color: var(--muted);
-      font-size: 0.9rem;
-      margin-bottom: 24px;
-    }
+    .hero-card { background: var(--white); border-radius: 14px; padding: 36px 32px; box-shadow: 0 20px 60px rgba(0,0,0,0.35); }
+    .hero-card h3 { color: var(--navy); font-size: 1.3rem; font-weight: 800; margin-bottom: 4px; }
+    .hero-card .subhead { color: var(--muted); font-size: 0.9rem; margin-bottom: 24px; }
     .form-group { margin-bottom: 16px; }
-    .form-group label {
-      display: block;
-      font-size: 0.85rem;
-      font-weight: 600;
-      color: var(--navy);
-      margin-bottom: 6px;
+    .form-group label { display: block; font-size: 0.85rem; font-weight: 600; color: var(--navy); margin-bottom: 6px; }
+    .form-group input, .form-group select, .form-group textarea {
+      width: 100%; padding: 11px 14px; border: 1.5px solid var(--mid); border-radius: 6px;
+      font-size: 0.95rem; font-family: inherit; color: var(--text); background: #fff;
+      transition: border-color 0.2s; outline: none;
     }
-    .form-group input,
-    .form-group select,
-    .form-group textarea {
-      width: 100%;
-      padding: 11px 14px;
-      border: 1.5px solid var(--mid);
-      border-radius: 6px;
-      font-size: 0.95rem;
-      font-family: inherit;
-      color: var(--text);
-      background: #fff;
-      transition: border-color 0.2s;
-      outline: none;
-    }
-    .form-group input:focus,
-    .form-group select:focus,
-    .form-group textarea:focus {
-      border-color: var(--navy);
-      box-shadow: 0 0 0 3px rgba(13,43,78,0.1);
+    .form-group input:focus, .form-group select:focus, .form-group textarea:focus {
+      border-color: var(--navy); box-shadow: 0 0 0 3px rgba(13,43,78,0.1);
     }
     .form-group textarea { resize: vertical; min-height: 80px; }
     .form-submit-btn {
-      width: 100%;
-      padding: 14px;
-      font-size: 1rem;
-      font-weight: 800;
-      background: var(--gold);
-      color: var(--navy);
-      border: none;
-      border-radius: 6px;
-      cursor: pointer;
-      transition: all 0.2s;
+      width: 100%; padding: 14px; font-size: 1rem; font-weight: 800;
+      background: var(--gold); color: var(--navy); border: none; border-radius: 6px;
+      cursor: pointer; transition: all 0.2s;
     }
     .form-submit-btn:hover { background: var(--gold2); transform: translateY(-1px); }
-    .form-privacy {
-      text-align: center;
-      font-size: 0.78rem;
-      color: var(--muted);
-      margin-top: 10px;
-    }
-    .success-msg {
-      display: none;
-      text-align: center;
-      padding: 24px;
-    }
+    .form-privacy { text-align: center; font-size: 0.78rem; color: var(--muted); margin-top: 10px; }
+    .success-msg { display: none; text-align: center; padding: 24px; }
     .success-msg .check {
-      width: 56px; height: 56px;
-      background: var(--green);
-      border-radius: 50%;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      margin: 0 auto 16px;
+      width: 56px; height: 56px; background: var(--green); border-radius: 50%;
+      display: flex; align-items: center; justify-content: center; margin: 0 auto 16px;
     }
     .success-msg h4 { color: var(--navy); font-size: 1.2rem; margin-bottom: 8px; }
     .success-msg p { color: var(--muted); font-size: 0.95rem; }
 
-    /* ââ Stats Banner ââââââââââââââââââââââââââââââââââââââ */
-    #stats {
-      background: var(--gold);
-      padding: 28px 0;
-    }
-    .stats-grid {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
-      gap: 8px;
-      text-align: center;
-    }
+    /* Stats Banner */
+    #stats { background: var(--gold); padding: 28px 0; }
+    .stats-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(160px, 1fr)); gap: 8px; text-align: center; }
     .stat-item { padding: 8px 0; }
-    .stat-number {
-      font-size: 2rem;
-      font-weight: 900;
-      color: var(--navy);
-      line-height: 1;
-    }
-    .stat-label {
-      font-size: 0.85rem;
-      font-weight: 600;
-      color: var(--navy2);
-      margin-top: 4px;
-    }
+    .stat-number { font-size: 2rem; font-weight: 900; color: var(--navy); line-height: 1; }
+    .stat-label { font-size: 0.85rem; font-weight: 600; color: var(--navy2); margin-top: 4px; }
 
-    /* ââ How It Works ââââââââââââââââââââââââââââââââââââââ */
+    /* How It Works */
     #how-it-works { padding: 80px 0; background: var(--white); }
     .hiw-header { text-align: center; margin-bottom: 56px; }
     .hiw-header .section-sub { margin: 0 auto; }
-    .steps-grid {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
-      gap: 24px;
-      position: relative;
-    }
-    .step-card {
-      background: var(--light);
-      border-radius: 12px;
-      padding: 32px 24px;
-      position: relative;
-      border-top: 4px solid var(--navy);
-    }
-    .step-num {
-      width: 40px; height: 40px;
-      background: var(--navy);
-      color: var(--white);
-      border-radius: 50%;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      font-size: 1rem;
-      font-weight: 800;
-      margin-bottom: 16px;
-    }
-    .step-card h3 {
-      font-size: 1.1rem;
-      font-weight: 800;
-      color: var(--navy);
-      margin-bottom: 10px;
-    }
+    .steps-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 24px; position: relative; }
+    .step-card { background: var(--light); border-radius: 12px; padding: 32px 24px; position: relative; border-top: 4px solid var(--navy); }
+    .step-num { width: 40px; height: 40px; background: var(--navy); color: var(--white); border-radius: 50%; display: flex; align-items: center; justify-content: center; font-size: 1rem; font-weight: 800; margin-bottom: 16px; }
+    .step-card h3 { font-size: 1.1rem; font-weight: 800; color: var(--navy); margin-bottom: 10px; }
     .step-card p { font-size: 0.93rem; color: var(--muted); }
-    .step-arrow {
-      position: absolute;
-      right: -16px;
-      top: 50%;
-      transform: translateY(-50%);
-      color: var(--gold);
-      font-size: 1.8rem;
-      font-weight: 900;
-      z-index: 1;
-    }
+    .step-arrow { position: absolute; right: -16px; top: 50%; transform: translateY(-50%); color: var(--gold); font-size: 1.8rem; font-weight: 900; z-index: 1; }
     @media (max-width: 768px) { .step-arrow { display: none; } }
 
-    /* ââ Program Details âââââââââââââââââââââââââââââââââââ */
+    /* Program Details */
     #program { padding: 80px 0; background: var(--light); }
-    .program-grid {
-      display: grid;
-      grid-template-columns: 1fr 1fr;
-      gap: 48px;
-      align-items: start;
-    }
+    .program-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 48px; align-items: start; }
     @media (max-width: 768px) { .program-grid { grid-template-columns: 1fr; } }
     .program-left .section-sub { margin-bottom: 28px; }
     .req-list { list-style: none; }
-    .req-list li {
-      display: flex;
-      gap: 12px;
-      align-items: flex-start;
-      padding: 14px 0;
-      border-bottom: 1px solid var(--mid);
-      font-size: 0.95rem;
-      color: var(--text);
-    }
+    .req-list li { display: flex; gap: 12px; align-items: flex-start; padding: 14px 0; border-bottom: 1px solid var(--mid); font-size: 0.95rem; color: var(--text); }
     .req-list li:last-child { border-bottom: none; }
-    .req-icon {
-      width: 26px; height: 26px;
-      background: var(--navy);
-      border-radius: 50%;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      flex-shrink: 0;
-      margin-top: 1px;
-    }
+    .req-icon { width: 26px; height: 26px; background: var(--navy); border-radius: 50%; display: flex; align-items: center; justify-content: center; flex-shrink: 0; margin-top: 1px; }
     .req-icon svg { width: 13px; height: 13px; fill: var(--white); }
-    .program-right {
-      background: var(--navy);
-      border-radius: 14px;
-      padding: 36px 32px;
-      color: var(--white);
-    }
-    .program-right h3 {
-      font-size: 1.25rem;
-      font-weight: 800;
-      margin-bottom: 8px;
-      color: var(--gold);
-    }
-    .program-right p {
-      font-size: 0.92rem;
-      color: rgba(255,255,255,0.8);
-      margin-bottom: 24px;
-      line-height: 1.65;
-    }
+    .program-right { background: var(--navy); border-radius: 14px; padding: 36px 32px; color: var(--white); }
+    .program-right h3 { font-size: 1.25rem; font-weight: 800; margin-bottom: 8px; color: var(--gold); }
+    .program-right p { font-size: 0.92rem; color: rgba(255,255,255,0.8); margin-bottom: 24px; line-height: 1.65; }
     .challenge-list { list-style: none; }
-    .challenge-list li {
-      display: flex;
-      gap: 10px;
-      align-items: flex-start;
-      padding: 10px 0;
-      font-size: 0.92rem;
-      color: rgba(255,255,255,0.85);
-      border-bottom: 1px solid rgba(255,255,255,0.1);
-    }
+    .challenge-list li { display: flex; gap: 10px; align-items: flex-start; padding: 10px 0; font-size: 0.92rem; color: rgba(255,255,255,0.85); border-bottom: 1px solid rgba(255,255,255,0.1); }
     .challenge-list li:last-child { border-bottom: none; }
-    .challenge-list .bullet {
-      color: var(--gold);
-      font-size: 1.2rem;
-      line-height: 1.2;
-      flex-shrink: 0;
-    }
-    .program-cta {
-      margin-top: 28px;
-      width: 100%;
-      display: block;
-      text-align: center;
-    }
+    .challenge-list .bullet { color: var(--gold); font-size: 1.2rem; line-height: 1.2; flex-shrink: 0; }
+    .program-cta { margin-top: 28px; width: 100%; display: block; text-align: center; }
 
-    /* ââ Why Us ââââââââââââââââââââââââââââââââââââââââââââ */
+    /* Why Us */
     #why-us { padding: 80px 0; background: var(--white); }
     .why-header { text-align: center; margin-bottom: 52px; }
     .why-header .section-sub { margin: 0 auto; }
-    .why-grid {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
-      gap: 28px;
-    }
-    .why-card {
-      border-radius: 12px;
-      padding: 32px 26px;
-      border: 1.5px solid var(--mid);
-      transition: all 0.25s;
-    }
-    .why-card:hover {
-      border-color: var(--gold);
-      box-shadow: 0 8px 30px rgba(232,160,32,0.15);
-      transform: translateY(-3px);
-    }
-    .why-icon {
-      width: 52px; height: 52px;
-      background: linear-gradient(135deg, var(--navy), var(--navy2));
-      border-radius: 12px;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      margin-bottom: 18px;
-    }
+    .why-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); gap: 28px; }
+    .why-card { border-radius: 12px; padding: 32px 26px; border: 1.5px solid var(--mid); transition: all 0.25s; }
+    .why-card:hover { border-color: var(--gold); box-shadow: 0 8px 30px rgba(232,160,32,0.15); transform: translateY(-3px); }
+    .why-icon { width: 52px; height: 52px; background: linear-gradient(135deg, var(--navy), var(--navy2)); border-radius: 12px; display: flex; align-items: center; justify-content: center; margin-bottom: 18px; }
     .why-icon svg { width: 26px; height: 26px; fill: var(--gold); }
-    .why-card h3 {
-      font-size: 1.05rem;
-      font-weight: 800;
-      color: var(--navy);
-      margin-bottom: 10px;
-    }
+    .why-card h3 { font-size: 1.05rem; font-weight: 800; color: var(--navy); margin-bottom: 10px; }
     .why-card p { font-size: 0.9rem; color: var(--muted); line-height: 1.65; }
 
-    /* ââ FAQ âââââââââââââââââââââââââââââââââââââââââââââââ */
+    /* FAQ */
     #faq { padding: 80px 0; background: var(--light); }
     .faq-header { text-align: center; margin-bottom: 48px; }
     .faq-list { max-width: 780px; margin: 0 auto; }
-    .faq-item {
-      border-radius: 10px;
-      background: var(--white);
-      margin-bottom: 12px;
-      overflow: hidden;
-      border: 1.5px solid var(--mid);
-    }
-    .faq-question {
-      width: 100%;
-      background: none;
-      border: none;
-      text-align: left;
-      padding: 20px 24px;
-      font-size: 0.98rem;
-      font-weight: 700;
-      color: var(--navy);
-      cursor: pointer;
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      gap: 12px;
-      font-family: inherit;
-      transition: background 0.15s;
-    }
+    .faq-item { border-radius: 10px; background: var(--white); margin-bottom: 12px; overflow: hidden; border: 1.5px solid var(--mid); }
+    .faq-question { width: 100%; background: none; border: none; text-align: left; padding: 20px 24px; font-size: 0.98rem; font-weight: 700; color: var(--navy); cursor: pointer; display: flex; justify-content: space-between; align-items: center; gap: 12px; font-family: inherit; transition: background 0.15s; }
     .faq-question:hover { background: var(--light); }
-    .faq-arrow {
-      flex-shrink: 0;
-      width: 22px; height: 22px;
-      border-radius: 50%;
-      background: var(--gold);
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      transition: transform 0.25s;
-    }
+    .faq-arrow { flex-shrink: 0; width: 22px; height: 22px; border-radius: 50%; background: var(--gold); display: flex; align-items: center; justify-content: center; transition: transform 0.25s; }
     .faq-arrow svg { width: 12px; height: 12px; fill: var(--navy); }
     .faq-item.open .faq-arrow { transform: rotate(180deg); }
-    .faq-answer {
-      max-height: 0;
-      overflow: hidden;
-      transition: max-height 0.3s ease;
-    }
+    .faq-answer { max-height: 0; overflow: hidden; transition: max-height 0.3s ease; }
     .faq-item.open .faq-answer { max-height: 400px; }
-    .faq-answer-inner {
-      padding: 0 24px 20px;
-      font-size: 0.93rem;
-      color: var(--muted);
-      line-height: 1.7;
-    }
+    .faq-answer-inner { padding: 0 24px 20px; font-size: 0.93rem; color: var(--muted); line-height: 1.7; }
 
-    /* ââ Contact Section âââââââââââââââââââââââââââââââââââ */
+    /* Contact Section */
     #contact { padding: 80px 0; background: var(--navy); }
-    .contact-grid {
-      display: grid;
-      grid-template-columns: 1fr 1fr;
-      gap: 56px;
-      align-items: start;
-    }
+    .contact-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 56px; align-items: start; }
     @media (max-width: 768px) { .contact-grid { grid-template-columns: 1fr; } }
     .contact-left { color: var(--white); }
     .contact-left .section-label { background: var(--gold); color: var(--navy); }
     .contact-left .section-title { color: var(--white); }
     .contact-left .section-sub { color: rgba(255,255,255,0.75); margin-bottom: 32px; }
     .contact-info { display: flex; flex-direction: column; gap: 18px; }
-    .info-item {
-      display: flex;
-      gap: 14px;
-      align-items: flex-start;
-    }
-    .info-icon {
-      width: 44px; height: 44px;
-      background: rgba(255,255,255,0.1);
-      border-radius: 10px;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      flex-shrink: 0;
-    }
+    .info-item { display: flex; gap: 14px; align-items: flex-start; }
+    .info-icon { width: 44px; height: 44px; background: rgba(255,255,255,0.1); border-radius: 10px; display: flex; align-items: center; justify-content: center; flex-shrink: 0; }
     .info-icon svg { width: 22px; height: 22px; fill: var(--gold); }
     .info-text h4 { font-size: 0.85rem; color: rgba(255,255,255,0.6); font-weight: 600; margin-bottom: 4px; }
     .info-text a, .info-text p { font-size: 1.05rem; font-weight: 700; color: var(--white); }
     .info-text a:hover { color: var(--gold); }
-    .contact-card {
-      background: var(--white);
-      border-radius: 14px;
-      padding: 36px 32px;
-    }
+    .contact-card { background: var(--white); border-radius: 14px; padding: 36px 32px; }
     .contact-card h3 { color: var(--navy); font-size: 1.2rem; font-weight: 800; margin-bottom: 4px; }
     .contact-card .subhead { color: var(--muted); font-size: 0.88rem; margin-bottom: 24px; }
 
-    /* ââ Footer ââââââââââââââââââââââââââââââââââââââââââââ */
-    footer {
-      background: #071829;
-      color: rgba(255,255,255,0.55);
-      text-align: center;
-      padding: 28px 24px;
-      font-size: 0.85rem;
-    }
+    /* Footer */
+    footer { background: #071829; color: rgba(255,255,255,0.55); text-align: center; padding: 28px 24px; font-size: 0.85rem; }
     footer strong { color: rgba(255,255,255,0.85); }
     footer .footer-links { margin-top: 8px; display: flex; justify-content: center; gap: 24px; flex-wrap: wrap; }
     footer .footer-links a { color: rgba(255,255,255,0.5); transition: color 0.2s; }
     footer .footer-links a:hover { color: var(--gold); }
 
-    /* ââ Scroll-to-form anchor highlight ââââââââââââââââââââ */
+    /* Scroll highlight */
     .highlighted { animation: pulse 1.5s ease; }
     @keyframes pulse {
       0%, 100% { box-shadow: none; }
@@ -588,13 +268,12 @@
 </head>
 <body>
 
-<!-- ââ NAV ââââââââââââââââââââââââââââââââââââââââââââââââââââ -->
+<!-- NAV -->
 <nav>
   <div class="container nav-inner">
     <div class="nav-logo">Baltimore <span>Housing</span><br>Solutions Team</div>
     <div class="nav-cta">
       <a href="tel:+14101234567" class="nav-phone">
-        <!-- phone icon -->
         <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.69 12a19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 3.6 1.27h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 8.91a16 16 0 0 0 6 6l.81-.81a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
         (410) 123-4567
       </a>
@@ -603,15 +282,14 @@
   </div>
 </nav>
 
-<!-- ââ HERO âââââââââââââââââââââââââââââââââââââââââââââââââââ -->
+<!-- HERO -->
 <section id="hero">
   <div class="container">
     <div class="hero-grid">
-      <!-- Left copy -->
       <div>
         <span class="hero-eyebrow">Baltimore BuyIntoBmore Program</span>
         <h1 class="hero-title">
-          Own a Baltimore Home<br>for <span class="accent">Just $1</span> â<br>We Handle the Rest
+          Own a Baltimore Home<br>for <span class="accent">Just $1</span> &mdash;<br>We Handle the Rest
         </h1>
         <p class="hero-desc">
           Baltimore City is selling vacant, city-owned homes for $1 to eligible residents.
@@ -624,32 +302,23 @@
         </div>
         <div class="hero-trust">
           <div class="trust-item">
-            <div class="trust-icon">
-              <svg viewBox="0 0 12 12" fill="none" stroke="white" stroke-width="2"><polyline points="2,6 5,9 10,3"/></svg>
-            </div>
-            Licensed & Insured GC
+            <div class="trust-icon"><svg viewBox="0 0 12 12" fill="none" stroke="white" stroke-width="2"><polyline points="2,6 5,9 10,3"/></svg></div>
+            Licensed &amp; Insured GC
           </div>
           <div class="trust-item">
-            <div class="trust-icon">
-              <svg viewBox="0 0 12 12" fill="none" stroke="white" stroke-width="2"><polyline points="2,6 5,9 10,3"/></svg>
-            </div>
+            <div class="trust-icon"><svg viewBox="0 0 12 12" fill="none" stroke="white" stroke-width="2"><polyline points="2,6 5,9 10,3"/></svg></div>
             Baltimore City Experts
           </div>
           <div class="trust-item">
-            <div class="trust-icon">
-              <svg viewBox="0 0 12 12" fill="none" stroke="white" stroke-width="2"><polyline points="2,6 5,9 10,3"/></svg>
-            </div>
+            <div class="trust-icon"><svg viewBox="0 0 12 12" fill="none" stroke="white" stroke-width="2"><polyline points="2,6 5,9 10,3"/></svg></div>
             Free Consultation
           </div>
         </div>
       </div>
-
-      <!-- Right: lead form -->
       <div>
         <div class="hero-card">
           <h3>Get Your Free Consultation</h3>
-          <p class="subhead">Find out if you qualify â takes less than 2 minutes</p>
-
+          <p class="subhead">Find out if you qualify &mdash; takes less than 2 minutes</p>
           <div id="heroFormWrap">
             <form id="heroForm" onsubmit="submitForm(event, 'heroFormWrap', 'heroSuccess')">
               <div class="form-group">
@@ -671,21 +340,18 @@
               <div class="form-group">
                 <label for="h-funds">Do you have ~$90K available for renovation?</label>
                 <select id="h-funds" name="funds">
-                  <option value="">â Select â</option>
+                  <option value="">&mdash; Select &mdash;</option>
                   <option>Yes, I have funds available</option>
                   <option>I need help finding financing</option>
                   <option>Not sure yet</option>
                 </select>
               </div>
-              <button type="submit" class="form-submit-btn">â Check My Eligibility â Free</button>
+              <button type="submit" class="form-submit-btn">&#10003; Check My Eligibility &mdash; Free</button>
             </form>
-            <p class="form-privacy">ð Your info is private. No spam, ever.</p>
+            <p class="form-privacy">&#128274; Your info is private. No spam, ever.</p>
           </div>
-
           <div class="success-msg" id="heroSuccess">
-            <div class="check">
-              <svg viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="3" width="28" height="28"><polyline points="20 6 9 17 4 12"/></svg>
-            </div>
+            <div class="check"><svg viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="3" width="28" height="28"><polyline points="20 6 9 17 4 12"/></svg></div>
             <h4>We'll be in touch shortly!</h4>
             <p>Thank you! A member of our team will call you within 24 hours to discuss your eligibility and next steps.</p>
           </div>
@@ -695,191 +361,145 @@
   </div>
 </section>
 
-<!-- ââ STATS âââââââââââââââââââââââââââââââââââââââââââââââââââ -->
+<!-- STATS -->
 <section id="stats">
   <div class="container">
     <div class="stats-grid">
-      <div class="stat-item">
-        <div class="stat-number">$1</div>
-        <div class="stat-label">Home Purchase Price</div>
-      </div>
-      <div class="stat-item">
-        <div class="stat-number">5,000+</div>
-        <div class="stat-label">Baltimore Vacants Targeted</div>
-      </div>
-      <div class="stat-item">
-        <div class="stat-number">1 Year</div>
-        <div class="stat-label">To Complete Renovation</div>
-      </div>
-      <div class="stat-item">
-        <div class="stat-number">Free</div>
-        <div class="stat-label">GC Consultation With Us</div>
-      </div>
+      <div class="stat-item"><div class="stat-number">$1</div><div class="stat-label">Home Purchase Price</div></div>
+      <div class="stat-item"><div class="stat-number">5,000+</div><div class="stat-label">Baltimore Vacants Targeted</div></div>
+      <div class="stat-item"><div class="stat-number">1 Year</div><div class="stat-label">To Complete Renovation</div></div>
+      <div class="stat-item"><div class="stat-number">Free</div><div class="stat-label">GC Consultation With Us</div></div>
     </div>
   </div>
 </section>
 
-<!-- ââ HOW IT WORKS ââââââââââââââââââââââââââââââââââââââââââââ -->
+<!-- HOW IT WORKS -->
 <section id="how-it-works">
   <div class="container">
     <div class="hiw-header">
       <span class="section-label">The Process</span>
-      <h2 class="section-title">From Application to Move-In â<br>We're With You Every Step</h2>
-      <p class="section-sub">Baltimore's BuyIntoBmore Fixed Pricing Program can be complex. We simplify it for you â and handle the entire renovation once you've secured your home.</p>
+      <h2 class="section-title">From Application to Move-In &mdash;<br>We're With You Every Step</h2>
+      <p class="section-sub">Baltimore's BuyIntoBmore Fixed Pricing Program can be complex. We simplify it for you &mdash; and handle the entire renovation once you've secured your home.</p>
     </div>
     <div class="steps-grid">
       <div class="step-card">
         <div class="step-num">1</div>
         <h3>Free Consultation</h3>
-        <p>We review your situation, explain the full program requirements, help you assess your renovation budget, and answer every question you have â at no cost.</p>
-        <span class="step-arrow">âº</span>
+        <p>We review your situation, explain the full program requirements, help you assess your renovation budget, and answer every question you have &mdash; at no cost.</p>
+        <span class="step-arrow">&rsaquo;</span>
       </div>
       <div class="step-card">
         <div class="step-num">2</div>
         <h3>City Application</h3>
         <p>We guide you through Baltimore City's DHCD application, help you document your $90K+ renovation funding, and prepare you for the vetting process.</p>
-        <span class="step-arrow">âº</span>
+        <span class="step-arrow">&rsaquo;</span>
       </div>
       <div class="step-card">
         <div class="step-num">3</div>
         <h3>Property Selection</h3>
         <p>Browse available city-owned vacant properties. We walk the home with you, assess its condition, and give you an honest renovation cost estimate.</p>
-        <span class="step-arrow">âº</span>
+        <span class="step-arrow">&rsaquo;</span>
       </div>
       <div class="step-card">
         <div class="step-num">4</div>
         <h3>We Renovate Your Home</h3>
-        <p>As your licensed General Contractor, we handle all permits, subcontractors, inspections, and construction â completing your renovation within the city's required 1-year timeline.</p>
+        <p>As your licensed General Contractor, we handle all permits, subcontractors, inspections, and construction &mdash; completing your renovation within the city's required 1-year timeline.</p>
       </div>
     </div>
   </div>
 </section>
 
-<!-- ââ PROGRAM DETAILS âââââââââââââââââââââââââââââââââââââââââ -->
+<!-- PROGRAM DETAILS -->
 <section id="program">
   <div class="container">
     <div class="program-grid">
       <div class="program-left">
         <span class="section-label">Program Requirements</span>
         <h2 class="section-title">What Baltimore's<br>$1 Home Program Requires</h2>
-        <p class="section-sub">Baltimore City's BuyIntoBmore Fixed Pricing Program gives eligible residents a chance to own a home for just $1 â with real responsibilities attached.</p>
+        <p class="section-sub">Baltimore City's BuyIntoBmore Fixed Pricing Program gives eligible residents a chance to own a home for just $1 &mdash; with real responsibilities attached.</p>
         <br/>
         <ul class="req-list">
           <li>
-            <div class="req-icon">
-              <svg viewBox="0 0 24 24"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"/></svg>
-            </div>
-            <div><strong>Baltimore City Resident</strong> â Current city residents get priority in the homeowner application period</div>
+            <div class="req-icon"><svg viewBox="0 0 24 24"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"/></svg></div>
+            <div><strong>Baltimore City Resident</strong> &mdash; Current city residents get priority in the homeowner application period</div>
           </li>
           <li>
-            <div class="req-icon">
-              <svg viewBox="0 0 24 24"><path d="M11.8 10.9c-2.27-.59-3-1.2-3-2.15 0-1.09 1.01-1.85 2.7-1.85 1.78 0 2.44.85 2.5 2.1h2.21c-.07-1.72-1.12-3.3-3.21-3.81V3h-3v2.16c-1.94.42-3.5 1.68-3.5 3.61 0 2.31 1.91 3.46 4.7 4.13 2.5.6 3 1.48 3 2.41 0 .69-.49 1.79-2.7 1.79-2.06 0-2.87-.92-2.98-2.1h-2.2c.12 2.19 1.76 3.42 3.68 3.83V21h3v-2.15c1.95-.37 3.5-1.5 3.5-3.55 0-2.84-2.43-3.81-4.7-4.4z"/></svg>
-            </div>
-            <div><strong>$90,000+ Renovation Funds</strong> â You must prove available funding for the renovation before approval</div>
+            <div class="req-icon"><svg viewBox="0 0 24 24"><path d="M11.8 10.9c-2.27-.59-3-1.2-3-2.15 0-1.09 1.01-1.85 2.7-1.85 1.78 0 2.44.85 2.5 2.1h2.21c-.07-1.72-1.12-3.3-3.21-3.81V3h-3v2.16c-1.94.42-3.5 1.68-3.5 3.61 0 2.31 1.91 3.46 4.7 4.13 2.5.6 3 1.48 3 2.41 0 .69-.49 1.79-2.7 1.79-2.06 0-2.87-.92-2.98-2.1h-2.2c.12 2.19 1.76 3.42 3.68 3.83V21h3v-2.15c1.95-.37 3.5-1.5 3.5-3.55 0-2.84-2.43-3.81-4.7-4.4z"/></svg></div>
+            <div><strong>$90,000+ Renovation Funds</strong> &mdash; You must prove available funding for the renovation before approval</div>
           </li>
           <li>
-            <div class="req-icon">
-              <svg viewBox="0 0 24 24"><path d="M9 11H7v9h10V11h-2v7H9v-7zm3-9l-4 4h3v6h2V6h3l-4-4z"/></svg>
-            </div>
-            <div><strong>Renovate Within 1 Year</strong> â Renovation must be completed within 12 months of purchase</div>
+            <div class="req-icon"><svg viewBox="0 0 24 24"><path d="M9 11H7v9h10V11h-2v7H9v-7zm3-9l-4 4h3v6h2V6h3l-4-4z"/></svg></div>
+            <div><strong>Renovate Within 1 Year</strong> &mdash; Renovation must be completed within 12 months of purchase</div>
           </li>
           <li>
-            <div class="req-icon">
-              <svg viewBox="0 0 24 24"><path d="M10 20v-6h4v6h5v-8h3L12 3 2 12h3v8z"/></svg>
-            </div>
-            <div><strong>Live There 5 Years</strong> â Property must be your primary residence for at least 5 years</div>
+            <div class="req-icon"><svg viewBox="0 0 24 24"><path d="M10 20v-6h4v6h5v-8h3L12 3 2 12h3v8z"/></svg></div>
+            <div><strong>Live There 5 Years</strong> &mdash; Property must be your primary residence for at least 5 years</div>
           </li>
           <li>
-            <div class="req-icon">
-              <svg viewBox="0 0 24 24"><path d="M14 2H6c-1.1 0-2 .9-2 2v16c0 1.1.9 2 2 2h12c1.1 0 2-.9 2-2V8l-6-6zm4 18H6V4h7v5h5v11z"/></svg>
-            </div>
-            <div><strong>$100 Application Fee</strong> â Paid to Baltimore City DHCD when you submit your application</div>
+            <div class="req-icon"><svg viewBox="0 0 24 24"><path d="M14 2H6c-1.1 0-2 .9-2 2v16c0 1.1.9 2 2 2h12c1.1 0 2-.9 2-2V8l-6-6zm4 18H6V4h7v5h5v11z"/></svg></div>
+            <div><strong>$100 Application Fee</strong> &mdash; Paid to Baltimore City DHCD when you submit your application</div>
           </li>
         </ul>
       </div>
       <div class="program-right">
-        <h3>â ï¸ The Catch Most People Don't Know About</h3>
-        <p>The $1 price sounds amazing â and it is. But many buyers underestimate the challenges involved. That's exactly where we come in.</p>
+        <h3>&#9888;&#65039; The Catch Most People Don't Know About</h3>
+        <p>The $1 price sounds amazing &mdash; and it is. But many buyers underestimate the challenges involved. That's exactly where we come in.</p>
         <ul class="challenge-list">
-          <li>
-            <span class="bullet">âº</span>
-            <span>Vacant homes often need <strong>full gut renovations</strong> â structural, electrical, plumbing, HVAC, and cosmetic work</span>
-          </li>
-          <li>
-            <span class="bullet">âº</span>
-            <span>The <strong>1-year timeline is strict</strong> â you need a GC who can execute quickly and pull all required permits</span>
-          </li>
-          <li>
-            <span class="bullet">âº</span>
-            <span>Finding a trustworthy GC familiar with city code and inspections is harder than it sounds</span>
-          </li>
-          <li>
-            <span class="bullet">âº</span>
-            <span>Unexpected issues mid-renovation can derail your timeline and budget without expert management</span>
-          </li>
+          <li><span class="bullet">&rsaquo;</span><span>Vacant homes often need <strong>full gut renovations</strong> &mdash; structural, electrical, plumbing, HVAC, and cosmetic work</span></li>
+          <li><span class="bullet">&rsaquo;</span><span>The <strong>1-year timeline is strict</strong> &mdash; you need a GC who can execute quickly and pull all required permits</span></li>
+          <li><span class="bullet">&rsaquo;</span><span>Finding a trustworthy GC familiar with city code and inspections is harder than it sounds</span></li>
+          <li><span class="bullet">&rsaquo;</span><span>Unexpected issues mid-renovation can derail your timeline and budget without expert management</span></li>
         </ul>
-        <a href="#contact" class="btn btn-gold program-cta">Talk to Our GC Team â Free</a>
+        <a href="#contact" class="btn btn-gold program-cta">Talk to Our GC Team &mdash; Free</a>
       </div>
     </div>
   </div>
 </section>
 
-<!-- ââ WHY US âââââââââââââââââââââââââââââââââââââââââââââââââââ -->
+<!-- WHY US -->
 <section id="why-us">
   <div class="container">
     <div class="why-header">
       <span class="section-label">Why Choose Us</span>
       <h2 class="section-title">Your One-Stop Partner for the Entire Journey</h2>
-      <p class="section-sub">We're not just a contractor â we're your guide through Baltimore's housing program from day one to move-in day.</p>
+      <p class="section-sub">We're not just a contractor &mdash; we're your guide through Baltimore's housing program from day one to move-in day.</p>
     </div>
     <div class="why-grid">
       <div class="why-card">
-        <div class="why-icon">
-          <svg viewBox="0 0 24 24"><path d="M12 1L3 5v6c0 5.55 3.84 10.74 9 12 5.16-1.26 9-6.45 9-12V5l-9-4zm-1 14l-3-3 1.41-1.41L11 12.17l4.59-4.58L17 9l-6 6z"/></svg>
-        </div>
-        <h3>Licensed & Fully Insured</h3>
-        <p>We carry all required Maryland contractor licenses and full liability insurance â protecting you, your investment, and your home throughout every phase of construction.</p>
+        <div class="why-icon"><svg viewBox="0 0 24 24"><path d="M12 1L3 5v6c0 5.55 3.84 10.74 9 12 5.16-1.26 9-6.45 9-12V5l-9-4zm-1 14l-3-3 1.41-1.41L11 12.17l4.59-4.58L17 9l-6 6z"/></svg></div>
+        <h3>Licensed &amp; Fully Insured</h3>
+        <p>We carry all required Maryland contractor licenses and full liability insurance &mdash; protecting you, your investment, and your home throughout every phase of construction.</p>
       </div>
       <div class="why-card">
-        <div class="why-icon">
-          <svg viewBox="0 0 24 24"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"/></svg>
-        </div>
+        <div class="why-icon"><svg viewBox="0 0 24 24"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"/></svg></div>
         <h3>Deep Baltimore Roots</h3>
-        <p>We know Baltimore's neighborhoods, city inspectors, permit processes, and code requirements inside and out. No learning curve â just results.</p>
+        <p>We know Baltimore's neighborhoods, city inspectors, permit processes, and code requirements inside and out. No learning curve &mdash; just results.</p>
       </div>
       <div class="why-card">
-        <div class="why-icon">
-          <svg viewBox="0 0 24 24"><path d="M11.99 2C6.47 2 2 6.48 2 12s4.47 10 9.99 10C17.52 22 22 17.52 22 12S17.52 2 11.99 2zM12 20c-4.42 0-8-3.58-8-8s3.58-8 8-8 8 3.58 8 8-3.58 8-8 8zm.5-13H11v6l5.25 3.15.75-1.23-4.5-2.67V7z"/></svg>
-        </div>
+        <div class="why-icon"><svg viewBox="0 0 24 24"><path d="M11.99 2C6.47 2 2 6.48 2 12s4.47 10 9.99 10C17.52 22 22 17.52 22 12S17.52 2 11.99 2zM12 20c-4.42 0-8-3.58-8-8s3.58-8 8-8 8 3.58 8 8-3.58 8-8 8zm.5-13H11v6l5.25 3.15.75-1.23-4.5-2.67V7z"/></svg></div>
         <h3>On-Time Delivery</h3>
-        <p>We treat your 1-year renovation deadline seriously. Our project management process keeps your build on schedule and on budget â so you never lose your home over a missed deadline.</p>
+        <p>We treat your 1-year renovation deadline seriously. Our project management process keeps your build on schedule and on budget &mdash; so you never lose your home over a missed deadline.</p>
       </div>
       <div class="why-card">
-        <div class="why-icon">
-          <svg viewBox="0 0 24 24"><path d="M16 11c1.66 0 2.99-1.34 2.99-3S17.66 5 16 5c-1.66 0-3 1.34-3 3s1.34 3 3 3zm-8 0c1.66 0 2.99-1.34 2.99-3S9.66 5 8 5C6.34 5 5 6.34 5 8s1.34 3 3 3zm0 2c-2.33 0-7 1.17-7 3.5V19h14v-2.5c0-2.33-4.67-3.5-7-3.5zm8 0c-.29 0-.62.02-.97.05 1.16.84 1.97 1.97 1.97 3.45V19h6v-2.5c0-2.33-4.67-3.5-7-3.5z"/></svg>
-        </div>
+        <div class="why-icon"><svg viewBox="0 0 24 24"><path d="M16 11c1.66 0 2.99-1.34 2.99-3S17.66 5 16 5c-1.66 0-3 1.34-3 3s1.34 3 3 3zm-8 0c1.66 0 2.99-1.34 2.99-3S9.66 5 8 5C6.34 5 5 6.34 5 8s1.34 3 3 3zm0 2c-2.33 0-7 1.17-7 3.5V19h14v-2.5c0-2.33-4.67-3.5-7-3.5zm8 0c-.29 0-.62.02-.97.05 1.16.84 1.97 1.97 1.97 3.45V19h6v-2.5c0-2.33-4.67-3.5-7-3.5z"/></svg></div>
         <h3>Full-Service Team</h3>
-        <p>From demo to drywall, electrical to plumbing, flooring to final inspection â we coordinate every trade so you have a single point of contact and zero headaches.</p>
+        <p>From demo to drywall, electrical to plumbing, flooring to final inspection &mdash; we coordinate every trade so you have a single point of contact and zero headaches.</p>
       </div>
       <div class="why-card">
-        <div class="why-icon">
-          <svg viewBox="0 0 24 24"><path d="M11.8 10.9c-2.27-.59-3-1.2-3-2.15 0-1.09 1.01-1.85 2.7-1.85 1.78 0 2.44.85 2.5 2.1h2.21c-.07-1.72-1.12-3.3-3.21-3.81V3h-3v2.16c-1.94.42-3.5 1.68-3.5 3.61 0 2.31 1.91 3.46 4.7 4.13 2.5.6 3 1.48 3 2.41 0 .69-.49 1.79-2.7 1.79-2.06 0-2.87-.92-2.98-2.1h-2.2c.12 2.19 1.76 3.42 3.68 3.83V21h3v-2.15c1.95-.37 3.5-1.5 3.5-3.55 0-2.84-2.43-3.81-4.7-4.4z"/></svg>
-        </div>
+        <div class="why-icon"><svg viewBox="0 0 24 24"><path d="M11.8 10.9c-2.27-.59-3-1.2-3-2.15 0-1.09 1.01-1.85 2.7-1.85 1.78 0 2.44.85 2.5 2.1h2.21c-.07-1.72-1.12-3.3-3.21-3.81V3h-3v2.16c-1.94.42-3.5 1.68-3.5 3.61 0 2.31 1.91 3.46 4.7 4.13 2.5.6 3 1.48 3 2.41 0 .69-.49 1.79-2.7 1.79-2.06 0-2.87-.92-2.98-2.1h-2.2c.12 2.19 1.76 3.42 3.68 3.83V21h3v-2.15c1.95-.37 3.5-1.5 3.5-3.55 0-2.84-2.43-3.81-4.7-4.4z"/></svg></div>
         <h3>Transparent Pricing</h3>
-        <p>We give you a detailed written estimate upfront â no hidden fees, no surprises. You'll always know exactly where your renovation budget is going.</p>
+        <p>We give you a detailed written estimate upfront &mdash; no hidden fees, no surprises. You'll always know exactly where your renovation budget is going.</p>
       </div>
       <div class="why-card">
-        <div class="why-icon">
-          <svg viewBox="0 0 24 24"><path d="M20 4H4c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm-7 3c1.93 0 3.5 1.57 3.5 3.5S14.93 14 13 14s-3.5-1.57-3.5-3.5S11.07 7 13 7zM5 18c0-2 4-3.1 6-3.1h.01C13.01 14.9 17 16 17 18H5z"/></svg>
-        </div>
+        <div class="why-icon"><svg viewBox="0 0 24 24"><path d="M20 4H4c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm-7 3c1.93 0 3.5 1.57 3.5 3.5S14.93 14 13 14s-3.5-1.57-3.5-3.5S11.07 7 13 7zM5 18c0-2 4-3.1 6-3.1h.01C13.01 14.9 17 16 17 18H5z"/></svg></div>
         <h3>Program Application Help</h3>
-        <p>We don't just show up to build â we help you navigate the city's application process, understand qualification requirements, and position your application for approval.</p>
+        <p>We don't just show up to build &mdash; we help you navigate the city's application process, understand qualification requirements, and position your application for approval.</p>
       </div>
     </div>
   </div>
 </section>
 
-<!-- ââ FAQ âââââââââââââââââââââââââââââââââââââââââââââââââââââ -->
+<!-- FAQ -->
 <section id="faq">
   <div class="container">
     <div class="faq-header">
@@ -892,108 +512,77 @@
           What exactly is the BuyIntoBmore Fixed Pricing Program?
           <span class="faq-arrow"><svg viewBox="0 0 24 24"><polyline points="6 9 12 15 18 9"/></svg></span>
         </button>
-        <div class="faq-answer">
-          <div class="faq-answer-inner">It's a Baltimore City program run by the Department of Housing &amp; Community Development (DHCD) that sells specific city-owned vacant properties for just $1 to eligible buyers who commit to renovating the home and living there as their primary residence for five years. It's part of the broader Reinvest Baltimore initiative aimed at converting 5,000+ vacant properties into occupied homes.</div>
-        </div>
+        <div class="faq-answer"><div class="faq-answer-inner">It's a Baltimore City program run by the Department of Housing &amp; Community Development (DHCD) that sells specific city-owned vacant properties for just $1 to eligible buyers who commit to renovating the home and living there as their primary residence for five years. It's part of the broader Reinvest Baltimore initiative aimed at converting 5,000+ vacant properties into occupied homes.</div></div>
       </div>
       <div class="faq-item">
         <button class="faq-question" onclick="toggleFaq(this)">
           Do I have to be a current Baltimore City resident to qualify?
           <span class="faq-arrow"><svg viewBox="0 0 24 24"><polyline points="6 9 12 15 18 9"/></svg></span>
         </button>
-        <div class="faq-answer">
-          <div class="faq-answer-inner">Current Baltimore City residents receive priority during the homeowner priority application period. If you're a Baltimore City resident who wants to use the home as your primary residence, you're in the best position to apply. Contact us and we'll help you assess your eligibility based on your specific situation.</div>
-        </div>
+        <div class="faq-answer"><div class="faq-answer-inner">Current Baltimore City residents receive priority during the homeowner priority application period. If you're a Baltimore City resident who wants to use the home as your primary residence, you're in the best position to apply. Contact us and we'll help you assess your eligibility based on your specific situation.</div></div>
       </div>
       <div class="faq-item">
         <button class="faq-question" onclick="toggleFaq(this)">
           Where do I get $90,000 for the renovation if I don't have it saved?
           <span class="faq-arrow"><svg viewBox="0 0 24 24"><polyline points="6 9 12 15 18 9"/></svg></span>
         </button>
-        <div class="faq-answer">
-          <div class="faq-answer-inner">There are several options â including renovation loans (like FHA 203k loans), home improvement grants through DHCD, private lenders, or personal funds. You need to demonstrate you have access to at least $90,000 before the city will approve your application. We can help you understand your financing options during your free consultation.</div>
-        </div>
+        <div class="faq-answer"><div class="faq-answer-inner">There are several options &mdash; including renovation loans (like FHA 203k loans), home improvement grants through DHCD, private lenders, or personal funds. You need to demonstrate you have access to at least $90,000 before the city will approve your application. We can help you understand your financing options during your free consultation.</div></div>
       </div>
       <div class="faq-item">
         <button class="faq-question" onclick="toggleFaq(this)">
           Can I really renovate a full house in 12 months?
           <span class="faq-arrow"><svg viewBox="0 0 24 24"><polyline points="6 9 12 15 18 9"/></svg></span>
         </button>
-        <div class="faq-answer">
-          <div class="faq-answer-inner">Yes â with the right GC, absolutely. We specialize in exactly this kind of full-gut Baltimore rowhouse renovation. The key is starting the process early, having your contractor and permits lined up before closing, and working with a team that knows how to move through Baltimore's inspection process efficiently. That's what we do.</div>
-        </div>
+        <div class="faq-answer"><div class="faq-answer-inner">Yes &mdash; with the right GC, absolutely. We specialize in exactly this kind of full-gut Baltimore rowhouse renovation. The key is starting the process early, having your contractor and permits lined up before closing, and working with a team that knows how to move through Baltimore's inspection process efficiently. That's what we do.</div></div>
       </div>
       <div class="faq-item">
         <button class="faq-question" onclick="toggleFaq(this)">
           What happens if I want to sell the home before the 5 years are up?
           <span class="faq-arrow"><svg viewBox="0 0 24 24"><polyline points="6 9 12 15 18 9"/></svg></span>
         </button>
-        <div class="faq-answer">
-          <div class="faq-answer-inner">The city requires you to use the home as your primary residence for five years. Selling before that period ends could trigger repayment or clawback provisions. We strongly recommend reviewing the full agreement with a real estate attorney before you close â and we can point you toward trusted local attorneys who handle these transactions.</div>
-        </div>
+        <div class="faq-answer"><div class="faq-answer-inner">The city requires you to use the home as your primary residence for five years. Selling before that period ends could trigger repayment or clawback provisions. We strongly recommend reviewing the full agreement with a real estate attorney before you close &mdash; and we can point you toward trusted local attorneys who handle these transactions.</div></div>
       </div>
       <div class="faq-item">
         <button class="faq-question" onclick="toggleFaq(this)">
           How much will the renovation actually cost?
           <span class="faq-arrow"><svg viewBox="0 0 24 24"><polyline points="6 9 12 15 18 9"/></svg></span>
         </button>
-        <div class="faq-answer">
-          <div class="faq-answer-inner">It depends heavily on the condition of the property. Many Baltimore vacant rowhouses need full gut renovations â which can run $90,000â$180,000 depending on size and scope. That's why the city requires you to prove $90K in funding as a minimum. We walk the property with you and provide a detailed written estimate so you know exactly what you're getting into before you commit.</div>
-        </div>
+        <div class="faq-answer"><div class="faq-answer-inner">It depends heavily on the condition of the property. Many Baltimore vacant rowhouses need full gut renovations &mdash; which can run $90,000&ndash;$180,000 depending on size and scope. That's why the city requires you to prove $90K in funding as a minimum. We walk the property with you and provide a detailed written estimate so you know exactly what you're getting into before you commit.</div></div>
       </div>
       <div class="faq-item">
         <button class="faq-question" onclick="toggleFaq(this)">
           Is the consultation really free? What's the catch?
           <span class="faq-arrow"><svg viewBox="0 0 24 24"><polyline points="6 9 12 15 18 9"/></svg></span>
         </button>
-        <div class="faq-answer">
-          <div class="faq-answer-inner">No catch. We offer a free consultation because we want to earn your trust and your business as your General Contractor. If you decide to move forward with the program and hire us to renovate your home, that's how we get paid â through the renovation contract. There's no obligation from the consultation.</div>
-        </div>
+        <div class="faq-answer"><div class="faq-answer-inner">No catch. We offer a free consultation because we want to earn your trust and your business as your General Contractor. If you decide to move forward with the program and hire us to renovate your home, that's how we get paid &mdash; through the renovation contract. There's no obligation from the consultation.</div></div>
       </div>
     </div>
   </div>
 </section>
 
-<!-- ââ CONTACT ââââââââââââââââââââââââââââââââââââââââââââââââââ -->
+<!-- CONTACT -->
 <section id="contact">
   <div class="container">
     <div class="contact-grid">
       <div class="contact-left">
         <span class="section-label">Get In Touch</span>
         <h2 class="section-title">Ready to Own a Baltimore Home for $1?</h2>
-        <p class="section-sub">Let's talk about your eligibility, your renovation budget, and how we can make this happen. There's no cost to the consultation â just an honest conversation.</p>
+        <p class="section-sub">Let's talk about your eligibility, your renovation budget, and how we can make this happen. There's no cost to the consultation &mdash; just an honest conversation.</p>
         <div class="contact-info">
           <div class="info-item">
-            <div class="info-icon">
-              <svg viewBox="0 0 24 24"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.69 12a19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 3.6 1.27h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 8.91a16 16 0 0 0 6 6l.81-.81a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
-            </div>
-            <div class="info-text">
-              <h4>Call or Text</h4>
-              <a href="tel:+14101234567">(410) 123-4567</a>
-            </div>
+            <div class="info-icon"><svg viewBox="0 0 24 24"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.69 12a19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 3.6 1.27h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 8.91a16 16 0 0 0 6 6l.81-.81a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg></div>
+            <div class="info-text"><h4>Call or Text</h4><a href="tel:+14101234567">(410) 123-4567</a></div>
           </div>
           <div class="info-item">
-            <div class="info-icon">
-              <svg viewBox="0 0 24 24"><path d="M20 4H4c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"/></svg>
-            </div>
-            <div class="info-text">
-              <h4>Email Us</h4>
-              <a href="mailto:info@baltimorehousingsolutions.com">info@baltimorehousingsolutions.com</a>
-            </div>
+            <div class="info-icon"><svg viewBox="0 0 24 24"><path d="M20 4H4c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"/></svg></div>
+            <div class="info-text"><h4>Email Us</h4><a href="mailto:info@baltimorehousingsolutions.com">info@baltimorehousingsolutions.com</a></div>
           </div>
           <div class="info-item">
-            <div class="info-icon">
-              <svg viewBox="0 0 24 24"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"/></svg>
-            </div>
-            <div class="info-text">
-              <h4>Service Area</h4>
-              <p>All Baltimore City Neighborhoods</p>
-            </div>
+            <div class="info-icon"><svg viewBox="0 0 24 24"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"/></svg></div>
+            <div class="info-text"><h4>Service Area</h4><p>All Baltimore City Neighborhoods</p></div>
           </div>
         </div>
       </div>
-
-      <!-- Contact Form -->
       <div class="contact-card">
         <h3>Request a Free Consultation</h3>
         <p class="subhead">We typically respond within a few hours during business hours</p>
@@ -1014,7 +603,7 @@
             <div class="form-group">
               <label for="c-how">How did you hear about the $1 home program?</label>
               <select id="c-how" name="source">
-                <option value="">â Select â</option>
+                <option value="">&mdash; Select &mdash;</option>
                 <option>Baltimore City DHCD website</option>
                 <option>News article or social media</option>
                 <option>Friend or family</option>
@@ -1026,14 +615,12 @@
               <label for="c-msg">Anything else you'd like us to know?</label>
               <textarea id="c-msg" name="message" placeholder="Tell us about your situation, timeline, or questions..."></textarea>
             </div>
-            <button type="submit" class="form-submit-btn">Send My Request â</button>
+            <button type="submit" class="form-submit-btn">Send My Request &rarr;</button>
           </form>
-          <p class="form-privacy">ð We never share your information. No spam.</p>
+          <p class="form-privacy">&#128274; We never share your information. No spam.</p>
         </div>
         <div class="success-msg" id="contactSuccess">
-          <div class="check">
-            <svg viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="3" width="28" height="28"><polyline points="20 6 9 17 4 12"/></svg>
-          </div>
+          <div class="check"><svg viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="3" width="28" height="28"><polyline points="20 6 9 17 4 12"/></svg></div>
           <h4>Message received!</h4>
           <p>Thank you for reaching out. We'll contact you within 24 hours to schedule your free consultation.</p>
         </div>
@@ -1042,10 +629,10 @@
   </div>
 </section>
 
-<!-- ââ FOOTER ââââââââââââââââââââââââââââââââââââââââââââââââââ -->
+<!-- FOOTER -->
 <footer>
   <div class="container">
-    <strong>Baltimore Housing Solutions Team</strong> â Licensed General Contractor serving all Baltimore City neighborhoods<br/>
+    <strong>Baltimore Housing Solutions Team</strong> &mdash; Licensed General Contractor serving all Baltimore City neighborhoods<br/>
     Specializing in BuyIntoBmore Fixed Pricing Program renovation projects
     <div class="footer-links">
       <a href="#how-it-works">How It Works</a>
@@ -1053,49 +640,39 @@
       <a href="#why-us">Why Choose Us</a>
       <a href="#faq">FAQ</a>
       <a href="#contact">Contact</a>
-      <a href="https://dhcd.baltimorecity.gov/fixed-pricing-program" target="_blank" rel="noopener">City Program Info â</a>
+      <a href="https://dhcd.baltimorecity.gov/fixed-pricing-program" target="_blank" rel="noopener">City Program Info</a>
     </div>
     <div style="margin-top:12px; font-size:0.78rem; color:rgba(255,255,255,0.35)">
-      Â© 2026 Baltimore Housing Solutions Team. Not affiliated with Baltimore City DHCD.
+      &copy; 2026 Baltimore Housing Solutions Team. Not affiliated with Baltimore City DHCD.
       All renovation estimates subject to site inspection.
     </div>
   </div>
 </footer>
 
 <script>
-  /* ââ FAQ Accordion âââââââââââââââââââââââââââââââââââââââ */
   function toggleFaq(btn) {
     const item = btn.closest('.faq-item');
     const isOpen = item.classList.contains('open');
-    // close all
     document.querySelectorAll('.faq-item.open').forEach(el => el.classList.remove('open'));
     if (!isOpen) item.classList.add('open');
   }
 
-  /* ââ Form Submit Handler âââââââââââââââââââââââââââââââââ */
   const GHL_WEBHOOK = 'https://services.leadconnectorhq.com/hooks/UANKDRoKvAniv0lPXzaY/webhook-trigger/f562ccbb-298e-4629-9706-7ee62ef8deea';
 
   function submitForm(e, wrapId, successId) {
     e.preventDefault();
     const form = e.target;
     const data = Object.fromEntries(new FormData(form));
-
-    // Submit to GoHighLevel webhook
     fetch(GHL_WEBHOOK, {
       method: 'POST',
       body: JSON.stringify(data),
       headers: { 'Content-Type': 'application/json' }
-    }).catch(function() {
-      // Silently handle errors â success message still shown
-    });
-
-    // Show success state immediately (optimistic UI)
+    }).catch(function() {});
     document.getElementById(wrapId).querySelector('form').style.display = 'none';
     document.getElementById(wrapId).querySelector('.form-privacy').style.display = 'none';
     document.getElementById(successId).style.display = 'block';
   }
 
-  /* ââ Smooth scroll for nav links âââââââââââââââââââââââââ */
   document.querySelectorAll('a[href^="#"]').forEach(a => {
     a.addEventListener('click', e => {
       const target = document.querySelector(a.getAttribute('href'));
