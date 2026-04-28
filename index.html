@@ -135,7 +135,13 @@
     .hero-actions { display: flex; gap: 14px; flex-wrap: wrap; }
     .hero-trust { display: flex; flex-wrap: wrap; gap: 18px; margin-top: 36px; }
     .trust-item { display: flex; align-items: center; gap: 8px; font-size: 0.9rem; color: rgba(255,255,255,0.8); }
-    .trust-icon { width: 22px; height: 22px; background: var(--gold); border-radius: 50%; display: flex; align-items: center; justify-content: center; flex-shrink: 0; }
+    .trust-icon {
+      width: 22px; height: 22px;
+      background: var(--gold);
+      border-radius: 50%;
+      display: flex; align-items: center; justify-content: center;
+      flex-shrink: 0;
+    }
     .trust-icon svg { width: 12px; height: 12px; }
 
     /* Hero Card */
@@ -145,18 +151,19 @@
     .form-group { margin-bottom: 16px; }
     .form-group label { display: block; font-size: 0.85rem; font-weight: 600; color: var(--navy); margin-bottom: 6px; }
     .form-group input, .form-group select, .form-group textarea {
-      width: 100%; padding: 11px 14px; border: 1.5px solid var(--mid); border-radius: 6px;
-      font-size: 0.95rem; font-family: inherit; color: var(--text); background: #fff;
-      transition: border-color 0.2s; outline: none;
+      width: 100%; padding: 11px 14px; border: 1.5px solid var(--mid);
+      border-radius: 6px; font-size: 0.95rem; font-family: inherit;
+      color: var(--text); background: #fff; transition: border-color 0.2s; outline: none;
     }
     .form-group input:focus, .form-group select:focus, .form-group textarea:focus {
-      border-color: var(--navy); box-shadow: 0 0 0 3px rgba(13,43,78,0.1);
+      border-color: var(--navy);
+      box-shadow: 0 0 0 3px rgba(13,43,78,0.1);
     }
     .form-group textarea { resize: vertical; min-height: 80px; }
     .form-submit-btn {
       width: 100%; padding: 14px; font-size: 1rem; font-weight: 800;
-      background: var(--gold); color: var(--navy); border: none; border-radius: 6px;
-      cursor: pointer; transition: all 0.2s;
+      background: var(--gold); color: var(--navy); border: none;
+      border-radius: 6px; cursor: pointer; transition: all 0.2s;
     }
     .form-submit-btn:hover { background: var(--gold2); transform: translateY(-1px); }
     .form-privacy { text-align: center; font-size: 0.78rem; color: var(--muted); margin-top: 10px; }
@@ -168,23 +175,23 @@
     .success-msg h4 { color: var(--navy); font-size: 1.2rem; margin-bottom: 8px; }
     .success-msg p { color: var(--muted); font-size: 0.95rem; }
 
-    /* Stats Banner */
-    #stats { background: var(--gold); padding: 28px 0; }
-    .stats-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(160px, 1fr)); gap: 8px; text-align: center; }
-    .stat-item { padding: 8px 0; }
-    .stat-number { font-size: 2rem; font-weight: 900; color: var(--navy); line-height: 1; }
-    .stat-label { font-size: 0.85rem; font-weight: 600; color: var(--navy2); margin-top: 4px; }
-
     /* How It Works */
     #how-it-works { padding: 80px 0; background: var(--white); }
     .hiw-header { text-align: center; margin-bottom: 56px; }
     .hiw-header .section-sub { margin: 0 auto; }
     .steps-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 24px; position: relative; }
     .step-card { background: var(--light); border-radius: 12px; padding: 32px 24px; position: relative; border-top: 4px solid var(--navy); }
-    .step-num { width: 40px; height: 40px; background: var(--navy); color: var(--white); border-radius: 50%; display: flex; align-items: center; justify-content: center; font-size: 1rem; font-weight: 800; margin-bottom: 16px; }
+    .step-num {
+      width: 40px; height: 40px; background: var(--navy); color: var(--white);
+      border-radius: 50%; display: flex; align-items: center; justify-content: center;
+      font-size: 1rem; font-weight: 800; margin-bottom: 16px;
+    }
     .step-card h3 { font-size: 1.1rem; font-weight: 800; color: var(--navy); margin-bottom: 10px; }
     .step-card p { font-size: 0.93rem; color: var(--muted); }
-    .step-arrow { position: absolute; right: -16px; top: 50%; transform: translateY(-50%); color: var(--gold); font-size: 1.8rem; font-weight: 900; z-index: 1; }
+    .step-arrow {
+      position: absolute; right: -16px; top: 50%; transform: translateY(-50%);
+      color: var(--gold); font-size: 1.8rem; font-weight: 900; z-index: 1;
+    }
     @media (max-width: 768px) { .step-arrow { display: none; } }
 
     /* Program Details */
@@ -193,15 +200,26 @@
     @media (max-width: 768px) { .program-grid { grid-template-columns: 1fr; } }
     .program-left .section-sub { margin-bottom: 28px; }
     .req-list { list-style: none; }
-    .req-list li { display: flex; gap: 12px; align-items: flex-start; padding: 14px 0; border-bottom: 1px solid var(--mid); font-size: 0.95rem; color: var(--text); }
+    .req-list li {
+      display: flex; gap: 12px; align-items: flex-start;
+      padding: 14px 0; border-bottom: 1px solid var(--mid);
+      font-size: 0.95rem; color: var(--text);
+    }
     .req-list li:last-child { border-bottom: none; }
-    .req-icon { width: 26px; height: 26px; background: var(--navy); border-radius: 50%; display: flex; align-items: center; justify-content: center; flex-shrink: 0; margin-top: 1px; }
+    .req-icon {
+      width: 26px; height: 26px; background: var(--navy); border-radius: 50%;
+      display: flex; align-items: center; justify-content: center; flex-shrink: 0; margin-top: 1px;
+    }
     .req-icon svg { width: 13px; height: 13px; fill: var(--white); }
     .program-right { background: var(--navy); border-radius: 14px; padding: 36px 32px; color: var(--white); }
     .program-right h3 { font-size: 1.25rem; font-weight: 800; margin-bottom: 8px; color: var(--gold); }
     .program-right p { font-size: 0.92rem; color: rgba(255,255,255,0.8); margin-bottom: 24px; line-height: 1.65; }
     .challenge-list { list-style: none; }
-    .challenge-list li { display: flex; gap: 10px; align-items: flex-start; padding: 10px 0; font-size: 0.92rem; color: rgba(255,255,255,0.85); border-bottom: 1px solid rgba(255,255,255,0.1); }
+    .challenge-list li {
+      display: flex; gap: 10px; align-items: flex-start; padding: 10px 0;
+      font-size: 0.92rem; color: rgba(255,255,255,0.85);
+      border-bottom: 1px solid rgba(255,255,255,0.1);
+    }
     .challenge-list li:last-child { border-bottom: none; }
     .challenge-list .bullet { color: var(--gold); font-size: 1.2rem; line-height: 1.2; flex-shrink: 0; }
     .program-cta { margin-top: 28px; width: 100%; display: block; text-align: center; }
@@ -213,7 +231,11 @@
     .why-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); gap: 28px; }
     .why-card { border-radius: 12px; padding: 32px 26px; border: 1.5px solid var(--mid); transition: all 0.25s; }
     .why-card:hover { border-color: var(--gold); box-shadow: 0 8px 30px rgba(232,160,32,0.15); transform: translateY(-3px); }
-    .why-icon { width: 52px; height: 52px; background: linear-gradient(135deg, var(--navy), var(--navy2)); border-radius: 12px; display: flex; align-items: center; justify-content: center; margin-bottom: 18px; }
+    .why-icon {
+      width: 52px; height: 52px;
+      background: linear-gradient(135deg, var(--navy), var(--navy2));
+      border-radius: 12px; display: flex; align-items: center; justify-content: center; margin-bottom: 18px;
+    }
     .why-icon svg { width: 26px; height: 26px; fill: var(--gold); }
     .why-card h3 { font-size: 1.05rem; font-weight: 800; color: var(--navy); margin-bottom: 10px; }
     .why-card p { font-size: 0.9rem; color: var(--muted); line-height: 1.65; }
@@ -223,16 +245,25 @@
     .faq-header { text-align: center; margin-bottom: 48px; }
     .faq-list { max-width: 780px; margin: 0 auto; }
     .faq-item { border-radius: 10px; background: var(--white); margin-bottom: 12px; overflow: hidden; border: 1.5px solid var(--mid); }
-    .faq-question { width: 100%; background: none; border: none; text-align: left; padding: 20px 24px; font-size: 0.98rem; font-weight: 700; color: var(--navy); cursor: pointer; display: flex; justify-content: space-between; align-items: center; gap: 12px; font-family: inherit; transition: background 0.15s; }
+    .faq-question {
+      width: 100%; background: none; border: none; text-align: left;
+      padding: 20px 24px; font-size: 0.98rem; font-weight: 700; color: var(--navy);
+      cursor: pointer; display: flex; justify-content: space-between; align-items: center;
+      gap: 12px; font-family: inherit; transition: background 0.15s;
+    }
     .faq-question:hover { background: var(--light); }
-    .faq-arrow { flex-shrink: 0; width: 22px; height: 22px; border-radius: 50%; background: var(--gold); display: flex; align-items: center; justify-content: center; transition: transform 0.25s; }
+    .faq-arrow {
+      flex-shrink: 0; width: 22px; height: 22px; border-radius: 50%;
+      background: var(--gold); display: flex; align-items: center; justify-content: center;
+      transition: transform 0.25s;
+    }
     .faq-arrow svg { width: 12px; height: 12px; fill: var(--navy); }
     .faq-item.open .faq-arrow { transform: rotate(180deg); }
     .faq-answer { max-height: 0; overflow: hidden; transition: max-height 0.3s ease; }
     .faq-item.open .faq-answer { max-height: 400px; }
     .faq-answer-inner { padding: 0 24px 20px; font-size: 0.93rem; color: var(--muted); line-height: 1.7; }
 
-    /* Contact Section */
+    /* Contact */
     #contact { padding: 80px 0; background: var(--navy); }
     .contact-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 56px; align-items: start; }
     @media (max-width: 768px) { .contact-grid { grid-template-columns: 1fr; } }
@@ -242,7 +273,10 @@
     .contact-left .section-sub { color: rgba(255,255,255,0.75); margin-bottom: 32px; }
     .contact-info { display: flex; flex-direction: column; gap: 18px; }
     .info-item { display: flex; gap: 14px; align-items: flex-start; }
-    .info-icon { width: 44px; height: 44px; background: rgba(255,255,255,0.1); border-radius: 10px; display: flex; align-items: center; justify-content: center; flex-shrink: 0; }
+    .info-icon {
+      width: 44px; height: 44px; background: rgba(255,255,255,0.1);
+      border-radius: 10px; display: flex; align-items: center; justify-content: center; flex-shrink: 0;
+    }
     .info-icon svg { width: 22px; height: 22px; fill: var(--gold); }
     .info-text h4 { font-size: 0.85rem; color: rgba(255,255,255,0.6); font-weight: 600; margin-bottom: 4px; }
     .info-text a, .info-text p { font-size: 1.05rem; font-weight: 700; color: var(--white); }
@@ -252,7 +286,10 @@
     .contact-card .subhead { color: var(--muted); font-size: 0.88rem; margin-bottom: 24px; }
 
     /* Footer */
-    footer { background: #071829; color: rgba(255,255,255,0.55); text-align: center; padding: 28px 24px; font-size: 0.85rem; }
+    footer {
+      background: #071829; color: rgba(255,255,255,0.55);
+      text-align: center; padding: 28px 24px; font-size: 0.85rem;
+    }
     footer strong { color: rgba(255,255,255,0.85); }
     footer .footer-links { margin-top: 8px; display: flex; justify-content: center; gap: 24px; flex-wrap: wrap; }
     footer .footer-links a { color: rgba(255,255,255,0.5); transition: color 0.2s; }
@@ -351,24 +388,14 @@
             <p class="form-privacy">&#128274; Your info is private. No spam, ever.</p>
           </div>
           <div class="success-msg" id="heroSuccess">
-            <div class="check"><svg viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="3" width="28" height="28"><polyline points="20 6 9 17 4 12"/></svg></div>
+            <div class="check">
+              <svg viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="3" width="28" height="28"><polyline points="20 6 9 17 4 12"/></svg>
+            </div>
             <h4>We'll be in touch shortly!</h4>
             <p>Thank you! A member of our team will call you within 24 hours to discuss your eligibility and next steps.</p>
           </div>
         </div>
       </div>
-    </div>
-  </div>
-</section>
-
-<!-- STATS -->
-<section id="stats">
-  <div class="container">
-    <div class="stats-grid">
-      <div class="stat-item"><div class="stat-number">$1</div><div class="stat-label">Home Purchase Price</div></div>
-      <div class="stat-item"><div class="stat-number">5,000+</div><div class="stat-label">Baltimore Vacants Targeted</div></div>
-      <div class="stat-item"><div class="stat-number">1 Year</div><div class="stat-label">To Complete Renovation</div></div>
-      <div class="stat-item"><div class="stat-number">Free</div><div class="stat-label">GC Consultation With Us</div></div>
     </div>
   </div>
 </section>
@@ -620,7 +647,9 @@
           <p class="form-privacy">&#128274; We never share your information. No spam.</p>
         </div>
         <div class="success-msg" id="contactSuccess">
-          <div class="check"><svg viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="3" width="28" height="28"><polyline points="20 6 9 17 4 12"/></svg></div>
+          <div class="check">
+            <svg viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="3" width="28" height="28"><polyline points="20 6 9 17 4 12"/></svg>
+          </div>
           <h4>Message received!</h4>
           <p>Thank you for reaching out. We'll contact you within 24 hours to schedule your free consultation.</p>
         </div>
@@ -640,7 +669,7 @@
       <a href="#why-us">Why Choose Us</a>
       <a href="#faq">FAQ</a>
       <a href="#contact">Contact</a>
-      <a href="https://dhcd.baltimorecity.gov/fixed-pricing-program" target="_blank" rel="noopener">City Program Info</a>
+      <a href="https://dhcd.baltimorecity.gov/fixed-pricing-program" target="_blank" rel="noopener">City Program Info &#8599;</a>
     </div>
     <div style="margin-top:12px; font-size:0.78rem; color:rgba(255,255,255,0.35)">
       &copy; 2026 Baltimore Housing Solutions Team. Not affiliated with Baltimore City DHCD.
