@@ -240,6 +240,43 @@
     .why-card h3 { font-size: 1.05rem; font-weight: 800; color: var(--navy); margin-bottom: 10px; }
     .why-card p { font-size: 0.9rem; color: var(--muted); line-height: 1.65; }
 
+    /* Services Ribbon */
+    #services-ribbon { background: var(--white); border-bottom: 1px solid var(--mid); padding: 14px 0; }
+    .ribbon-inner { display: flex; align-items: center; flex-wrap: wrap; gap: 10px; }
+    .ribbon-label { font-size: 0.78rem; font-weight: 700; color: var(--muted); text-transform: uppercase; letter-spacing: 0.09em; flex-shrink: 0; }
+    .ribbon-services { display: flex; gap: 8px; flex-wrap: wrap; align-items: center; }
+    .ribbon-pill { display: inline-flex; align-items: center; gap: 6px; padding: 6px 15px; border-radius: 100px; font-size: 0.83rem; font-weight: 700; border: 1.5px solid transparent; transition: all 0.2s; text-decoration: none; line-height: 1; }
+    .ribbon-pill.featured { background: var(--gold); color: var(--navy); }
+    .ribbon-pill.featured:hover { background: var(--gold2); }
+    .ribbon-pill.secondary { background: transparent; color: var(--navy2); border-color: var(--mid); }
+    .ribbon-pill.secondary:hover { border-color: var(--navy); background: var(--light); }
+    @media (max-width: 540px) { .ribbon-label { width: 100%; } }
+
+    /* Services Splash */
+    #services-splash { background: linear-gradient(135deg, var(--navy) 0%, #1a3f6e 100%); padding: 72px 0; color: var(--white); }
+    .splash-inner { text-align: center; margin-bottom: 48px; }
+    .splash-inner .section-label { background: rgba(255,255,255,0.14); color: var(--white); }
+    .splash-inner .section-title { color: var(--white); }
+    .splash-inner .section-sub { color: rgba(255,255,255,0.72); margin: 0 auto; }
+    .splash-cards { display: grid; grid-template-columns: repeat(auto-fit, minmax(255px, 1fr)); gap: 20px; margin-bottom: 44px; }
+    .splash-card { background: rgba(255,255,255,0.07); border: 1px solid rgba(255,255,255,0.12); border-radius: 14px; padding: 32px 28px; transition: all 0.25s; }
+    .splash-card:hover { background: rgba(255,255,255,0.12); border-color: var(--gold); transform: translateY(-3px); }
+    .splash-card-icon { width: 48px; height: 48px; background: var(--gold); border-radius: 10px; display: flex; align-items: center; justify-content: center; margin-bottom: 16px; }
+    .splash-card-icon svg { width: 24px; height: 24px; fill: var(--navy); }
+    .splash-card h3 { font-size: 1.05rem; font-weight: 800; color: var(--white); margin-bottom: 8px; }
+    .splash-card p { font-size: 0.88rem; color: rgba(255,255,255,0.72); line-height: 1.65; margin-bottom: 16px; }
+    .splash-card-link { font-size: 0.85rem; font-weight: 700; color: var(--gold); display: inline-flex; align-items: center; gap: 4px; }
+    .splash-card-link:hover { color: var(--gold2); }
+    .splash-cta { text-align: center; }
+    .splash-cta p { font-size: 0.88rem; color: rgba(255,255,255,0.5); margin-top: 12px; }
+
+    /* Official Link Callout */
+    .official-link-box { display: flex; gap: 12px; align-items: flex-start; background: rgba(13,43,78,0.06); border-left: 3px solid var(--navy2); border-radius: 6px; padding: 14px 16px; margin-top: 24px; font-size: 0.87rem; color: var(--muted); line-height: 1.6; }
+    .official-link-box strong { display: block; color: var(--navy); margin-bottom: 3px; font-size: 0.87rem; }
+    .official-link-box a { color: var(--navy2); font-weight: 700; text-decoration: underline; }
+    .official-link-box a:hover { color: var(--gold2); }
+    .official-link-box svg { flex-shrink: 0; margin-top: 1px; fill: var(--navy2); }
+
     /* FAQ */
     #faq { padding: 80px 0; background: var(--light); }
     .faq-header { text-align: center; margin-bottom: 48px; }
@@ -400,6 +437,24 @@
   </div>
 </section>
 
+<!-- SERVICES RIBBON -->
+<div id="services-ribbon">
+  <div class="container ribbon-inner">
+    <span class="ribbon-label">Our Services</span>
+    <div class="ribbon-services">
+      <a href="#how-it-works" class="ribbon-pill featured">&#9733; $1 Dollar Home Program</a>
+      <a href="#services-splash" class="ribbon-pill secondary">
+        <svg width="13" height="13" viewBox="0 0 24 24" fill="currentColor"><path d="M10 20v-6h4v6h5v-8h3L12 3 2 12h3v8z"/></svg>
+        Rental Properties
+      </a>
+      <a href="#services-splash" class="ribbon-pill secondary">
+        <svg width="13" height="13" viewBox="0 0 24 24" fill="currentColor"><path d="M19 3H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zm-5 14H7v-2h7v2zm3-4H7v-2h10v2zm0-4H7V7h10v2z"/></svg>
+        Property Management
+      </a>
+    </div>
+  </div>
+</div>
+
 <!-- HOW IT WORKS -->
 <section id="how-it-works">
   <div class="container">
@@ -441,32 +496,43 @@
   <div class="container">
     <div class="program-grid">
       <div class="program-left">
-        <span class="section-label">Program Requirements</span>
-        <h2 class="section-title">What Baltimore's<br>$1 Home Program Requires</h2>
-        <p class="section-sub">Baltimore City's BuyIntoBmore Fixed Pricing Program gives eligible residents a chance to own a home for just $1 &mdash; with real responsibilities attached.</p>
+        <span class="section-label">The $1 Program</span>
+        <h2 class="section-title">How Baltimore's<br>$1 Home Program Works</h2>
+        <p class="section-sub">Baltimore City sells vacant, city-owned homes to eligible residents for just $1 &mdash; in exchange for a commitment to renovate and live there. Here's the short version:</p>
         <br/>
         <ul class="req-list">
           <li>
-            <div class="req-icon"><svg viewBox="0 0 24 24"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"/></svg></div>
-            <div><strong>Baltimore City Resident</strong> &mdash; Current city residents get priority in the homeowner application period</div>
+            <div class="req-icon">
+              <svg viewBox="0 0 24 24"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"/></svg>
+            </div>
+            <div><strong>Baltimore City Resident</strong> &mdash; Current city residents get priority during the homeowner application window</div>
           </li>
           <li>
-            <div class="req-icon"><svg viewBox="0 0 24 24"><path d="M11.8 10.9c-2.27-.59-3-1.2-3-2.15 0-1.09 1.01-1.85 2.7-1.85 1.78 0 2.44.85 2.5 2.1h2.21c-.07-1.72-1.12-3.3-3.21-3.81V3h-3v2.16c-1.94.42-3.5 1.68-3.5 3.61 0 2.31 1.91 3.46 4.7 4.13 2.5.6 3 1.48 3 2.41 0 .69-.49 1.79-2.7 1.79-2.06 0-2.87-.92-2.98-2.1h-2.2c.12 2.19 1.76 3.42 3.68 3.83V21h3v-2.15c1.95-.37 3.5-1.5 3.5-3.55 0-2.84-2.43-3.81-4.7-4.4z"/></svg></div>
-            <div><strong>$90,000+ Renovation Funds</strong> &mdash; You must prove available funding for the renovation before approval</div>
+            <div class="req-icon">
+              <svg viewBox="0 0 24 24"><path d="M11.8 10.9c-2.27-.59-3-1.2-3-2.15 0-1.09 1.01-1.85 2.7-1.85 1.78 0 2.44.85 2.5 2.1h2.21c-.07-1.72-1.12-3.3-3.21-3.81V3h-3v2.16c-1.94.42-3.5 1.68-3.5 3.61 0 2.31 1.91 3.46 4.7 4.13 2.5.6 3 1.48 3 2.41 0 .69-.49 1.79-2.7 1.79-2.06 0-2.87-.92-2.98-2.1h-2.2c.12 2.19 1.76 3.42 3.68 3.83V21h3v-2.15c1.95-.37 3.5-1.5 3.5-3.55 0-2.84-2.43-3.81-4.7-4.4z"/></svg>
+            </div>
+            <div><strong>Renovation Funds Ready</strong> &mdash; You'll need to show access to renovation funding (typically $90K+) before city approval</div>
           </li>
           <li>
-            <div class="req-icon"><svg viewBox="0 0 24 24"><path d="M9 11H7v9h10V11h-2v7H9v-7zm3-9l-4 4h3v6h2V6h3l-4-4z"/></svg></div>
-            <div><strong>Renovate Within 1 Year</strong> &mdash; Renovation must be completed within 12 months of purchase</div>
+            <div class="req-icon">
+              <svg viewBox="0 0 24 24"><path d="M9 11H7v9h10V11h-2v7H9v-7zm3-9l-4 4h3v6h2V6h3l-4-4z"/></svg>
+            </div>
+            <div><strong>Renovate Within 1 Year</strong> &mdash; The home must be fully renovated within 12 months of purchase &mdash; that's exactly where we come in</div>
           </li>
           <li>
-            <div class="req-icon"><svg viewBox="0 0 24 24"><path d="M10 20v-6h4v6h5v-8h3L12 3 2 12h3v8z"/></svg></div>
-            <div><strong>Live There 5 Years</strong> &mdash; Property must be your primary residence for at least 5 years</div>
-          </li>
-          <li>
-            <div class="req-icon"><svg viewBox="0 0 24 24"><path d="M14 2H6c-1.1 0-2 .9-2 2v16c0 1.1.9 2 2 2h12c1.1 0 2-.9 2-2V8l-6-6zm4 18H6V4h7v5h5v11z"/></svg></div>
-            <div><strong>$100 Application Fee</strong> &mdash; Paid to Baltimore City DHCD when you submit your application</div>
+            <div class="req-icon">
+              <svg viewBox="0 0 24 24"><path d="M10 20v-6h4v6h5v-8h3L12 3 2 12h3v8z"/></svg>
+            </div>
+            <div><strong>Make It Your Home for 5 Years</strong> &mdash; The property must serve as your primary residence for at least five years</div>
           </li>
         </ul>
+        <div class="official-link-box">
+          <svg width="18" height="18" viewBox="0 0 24 24"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm1 15h-2v-6h2v6zm0-8h-2V7h2v2z"/></svg>
+          <div>
+            <strong>Program details are subject to change</strong>
+            For official eligibility rules and currently available properties, visit the <a href="https://dhcd.baltimorecity.gov/fixed-pricing-program" target="_blank" rel="noopener">Baltimore City DHCD Fixed Pricing Program page &rarr;</a>
+          </div>
+        </div>
       </div>
       <div class="program-right">
         <h3>&#9888;&#65039; The Catch Most People Don't Know About</h3>
@@ -522,6 +588,47 @@
         <h3>Program Application Help</h3>
         <p>We don't just show up to build &mdash; we help you navigate the city's application process, understand qualification requirements, and position your application for approval.</p>
       </div>
+    </div>
+  </div>
+</section>
+
+<!-- SERVICES SPLASH -->
+<section id="services-splash">
+  <div class="container">
+    <div class="splash-inner">
+      <span class="section-label">More From Our Team</span>
+      <h2 class="section-title">Beyond the Dollar Home &mdash;<br>Full-Service Baltimore Real Estate</h2>
+      <p class="section-sub">The $1 home program is our specialty &mdash; but it's just the beginning. Our Housing Solutions team is your partner for every Baltimore real estate need.</p>
+    </div>
+    <div class="splash-cards">
+      <div class="splash-card">
+        <div class="splash-card-icon">
+          <svg viewBox="0 0 24 24"><path d="M10 20v-6h4v6h5v-8h3L12 3 2 12h3v8z"/></svg>
+        </div>
+        <h3>Rental Property Placement</h3>
+        <p>Not ready to buy? We help Baltimore residents find quality rental homes that fit their budget and neighborhood. Our team knows the market &mdash; let us do the legwork.</p>
+        <a href="#contact" class="splash-card-link">Connect with us &rarr;</a>
+      </div>
+      <div class="splash-card">
+        <div class="splash-card-icon">
+          <svg viewBox="0 0 24 24"><path d="M19 3H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zm-5 14H7v-2h7v2zm3-4H7v-2h10v2zm0-4H7V7h10v2z"/></svg>
+        </div>
+        <h3>Property Management</h3>
+        <p>Already own Baltimore investment property? We handle tenant placement, maintenance, rent collection, and daily operations so your investment works &mdash; without the landlord headaches.</p>
+        <a href="#contact" class="splash-card-link">Learn more &rarr;</a>
+      </div>
+      <div class="splash-card">
+        <div class="splash-card-icon">
+          <svg viewBox="0 0 24 24"><path d="M11.8 10.9c-2.27-.59-3-1.2-3-2.15 0-1.09 1.01-1.85 2.7-1.85 1.78 0 2.44.85 2.5 2.1h2.21c-.07-1.72-1.12-3.3-3.21-3.81V3h-3v2.16c-1.94.42-3.5 1.68-3.5 3.61 0 2.31 1.91 3.46 4.7 4.13 2.5.6 3 1.48 3 2.41 0 .69-.49 1.79-2.7 1.79-2.06 0-2.87-.92-2.98-2.1h-2.2c.12 2.19 1.76 3.42 3.68 3.83V21h3v-2.15c1.95-.37 3.5-1.5 3.5-3.55 0-2.84-2.43-3.81-4.7-4.4z"/></svg>
+        </div>
+        <h3>Real Estate Investment Guidance</h3>
+        <p>Thinking bigger? We advise Baltimore investors on acquisition strategy, renovation ROI, and portfolio growth in up-and-coming neighborhoods across the city.</p>
+        <a href="#contact" class="splash-card-link">Let's talk &rarr;</a>
+      </div>
+    </div>
+    <div class="splash-cta">
+      <a href="#contact" class="btn btn-gold">Talk to Our Housing Solutions Team</a>
+      <p>Baltimore Housing Solutions &mdash; locally focused, fully dedicated to you</p>
     </div>
   </div>
 </section>
@@ -665,14 +772,16 @@
     Specializing in BuyIntoBmore Fixed Pricing Program renovation projects
     <div class="footer-links">
       <a href="#how-it-works">How It Works</a>
-      <a href="#program">Program Details</a>
+      <a href="#program">$1 Program</a>
+      <a href="#services-splash">Our Services</a>
       <a href="#why-us">Why Choose Us</a>
       <a href="#faq">FAQ</a>
       <a href="#contact">Contact</a>
-      <a href="https://dhcd.baltimorecity.gov/fixed-pricing-program" target="_blank" rel="noopener">City Program Info &#8599;</a>
+      <a href="https://dhcd.baltimorecity.gov/fixed-pricing-program" target="_blank" rel="noopener">Official City Program Info &#8599;</a>
     </div>
     <div style="margin-top:12px; font-size:0.78rem; color:rgba(255,255,255,0.35)">
       &copy; 2026 Baltimore Housing Solutions Team. Not affiliated with Baltimore City DHCD.
+      Program details subject to change &mdash; visit <a href="https://dhcd.baltimorecity.gov/fixed-pricing-program" target="_blank" rel="noopener" style="color:rgba(255,255,255,0.45);text-decoration:underline">Baltimore City DHCD</a> for official information.
       All renovation estimates subject to site inspection.
     </div>
   </div>
