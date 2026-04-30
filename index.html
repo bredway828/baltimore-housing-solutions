@@ -801,6 +801,12 @@
     e.preventDefault();
     const form = e.target;
     const data = Object.fromEntries(new FormData(form));
+    if (data.name) {
+      const parts = data.name.trim().split(/\s+/);
+      data.firstName = parts[0] || '';
+      data.lastName = parts.slice(1).join(' ') || '';
+      delete data.name;
+    }
     fetch(GHL_WEBHOOK, {
       method: 'POST',
       mode: 'no-cors',
