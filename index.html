@@ -400,10 +400,6 @@
                 <input type="text" id="h-name" name="name" placeholder="Jane Smith" required />
               </div>
               <div class="form-group">
-                <label for="h-phone">Phone Number *</label>
-                <input type="tel" id="h-phone" name="phone" placeholder="(410) 555-0000" required />
-              </div>
-              <div class="form-group">
                 <label for="h-email">Email Address *</label>
                 <input type="email" id="h-email" name="email" placeholder="jane@email.com" required />
               </div>
@@ -419,6 +415,12 @@
                   <option>I need help finding financing</option>
                   <option>Not sure yet</option>
                 </select>
+              </div>
+              <div class="form-group" style="margin-bottom:12px">
+                <label style="display:flex;gap:8px;align-items:flex-start;cursor:pointer;font-size:0.82rem;color:var(--muted);font-weight:400">
+                  <input type="checkbox" name="sms_consent" required style="margin-top:3px;flex-shrink:0" />
+                  <span>I consent to receive texts &amp; calls from Baltimore Housing Solutions Team. Msg &amp; data rates may apply. Reply STOP to unsubscribe.</span>
+                </label>
               </div>
               <button type="submit" class="form-submit-btn">&#10003; Check My Eligibility &mdash; Free</button>
             </form>
@@ -727,10 +729,6 @@
               <input type="text" id="c-name" name="name" placeholder="Jane Smith" required />
             </div>
             <div class="form-group">
-              <label for="c-phone">Phone Number *</label>
-              <input type="tel" id="c-phone" name="phone" placeholder="(410) 555-0000" required />
-            </div>
-            <div class="form-group">
               <label for="c-email">Email Address *</label>
               <input type="email" id="c-email" name="email" placeholder="jane@email.com" required />
             </div>
@@ -749,6 +747,12 @@
               <label for="c-msg">Anything else you'd like us to know?</label>
               <textarea id="c-msg" name="message" placeholder="Tell us about your situation, timeline, or questions..."></textarea>
             </div>
+              <div class="form-group" style="margin-bottom:12px">
+                <label style="display:flex;gap:8px;align-items:flex-start;cursor:pointer;font-size:0.82rem;color:var(--muted);font-weight:400">
+                  <input type="checkbox" name="sms_consent" required style="margin-top:3px;flex-shrink:0" />
+                  <span>I consent to receive texts &amp; calls from Baltimore Housing Solutions Team. Msg &amp; data rates may apply. Reply STOP to unsubscribe.</span>
+                </label>
+              </div>
             <button type="submit" class="form-submit-btn">Send My Request &rarr;</button>
           </form>
           <p class="form-privacy">&#128274; We never share your information. No spam.</p>
